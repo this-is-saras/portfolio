@@ -66,7 +66,7 @@ body{
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a .active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color) ;
 }
@@ -257,7 +257,7 @@ span{
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Software Developer";
     }
  }
 
@@ -641,6 +641,11 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
+    .text-animation{
+        font-size: 27px;
+        font-weight: 600;
+        min-width: 300px;
+     }
     .timeline-items::before{
         left: 7px;
     }
@@ -648,7 +653,7 @@ span{
         padding-right: 0;
         text-align: left;
     }
-    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even){
         padding-left: 37px;
     }
@@ -688,7 +693,7 @@ span{
         display: none;
     }
 
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
 
@@ -719,8 +724,13 @@ span{
     }
 
     .home-img img{
-        width: 56lvw;
+        width: 56vw;
     }
+    .text-animation{
+        font-size: 26px;
+        font-weight: 600;
+        min-width: 300px;
+     }
 
     .services h2{
         margin-bottom: 3rem;
